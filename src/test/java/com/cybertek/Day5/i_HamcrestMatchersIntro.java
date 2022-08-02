@@ -8,9 +8,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
 
-public class HamcrestMatchersIntro {
+public class i_HamcrestMatchersIntro {
     @DisplayName("Matcher Demo")
     @Test
     public void test1() {

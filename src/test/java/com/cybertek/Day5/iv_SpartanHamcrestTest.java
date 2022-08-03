@@ -30,4 +30,29 @@ public class iv_SpartanHamcrestTest extends SpartanTestBase {
 
         System.out.println(names);
     }
+
+
+    @DisplayName("GET spartan/search and chaining together")
+    @Test
+    public void test2(){
+
+        //save status code
+
+        int statusCode = given().accept(ContentType.JSON)
+                .and()
+                .queryParams("nameContains","j",
+                        "gender","Male")
+                .when()
+                .get("/api/spartans/search")
+                .then()
+                .statusCode(200)
+                .and()
+                .body("totalElement",greaterThanOrEqualTo(3))
+                .extract().response().statusCode();
+
+        System.out.println(statusCode);
+
+
+
+    }
 }

@@ -12,11 +12,11 @@ public abstract class HRTestBase {
         baseURI = ConfigurationReader.getProperty("hrBaseUrl");
 
         //get ip address from configuraitons
-        String dbUrl = "jdbc:oracle:thin:@54.205.239.177:1521:xe";
+        String dbUrl = "jdbc:oracle:thin:@54.89.215.84:1521:xe";
         String dbUsername = "hr";
         String dbPassword = "hr";
 
-      //  DBUtils.createConnection(dbUrl,dbUsername,dbPassword);
+      DBUtils.createConnection(dbUrl,dbUsername,dbPassword);
     }
 
     @AfterAll

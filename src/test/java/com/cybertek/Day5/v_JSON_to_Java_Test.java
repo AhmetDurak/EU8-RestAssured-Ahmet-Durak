@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class iv_JSON_to_Java_Test extends SpartanTestBase {
+public class v_JSON_to_Java_Test extends SpartanTestBase {
     @DisplayName("GET one Spartan and deserialize to Map")
     @Test
     public void oneSpartanToMap() {

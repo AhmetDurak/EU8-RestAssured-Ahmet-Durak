@@ -1,0 +1,14 @@
+{
+    "items": [
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://54.89.215.84:1000/ords/hr/employees/"
+        }
+    ]
+}

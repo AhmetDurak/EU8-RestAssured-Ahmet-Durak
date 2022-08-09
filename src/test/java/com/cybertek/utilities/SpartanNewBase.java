@@ -47,6 +47,6 @@ public class SpartanNewBase {
     @AfterAll
     public static void close(){
         //reset the info we set above ,method comes from restassured
-        reset();
+        reset();// if you're working with different APIs
     }
 }

@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 
-public class vi_CsvFileSourceParameterizedTest {
+public class iv_CsvFileSourceParameterizedTest {
 
     // Write a parameterized test for this request
     // Get the data from csv source

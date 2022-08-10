@@ -17,36 +17,35 @@ public class SpartanNewBase {
     public static RequestSpecification adminSpec;
 
     @BeforeAll
-    public static void init(){
+    public static void init() {
         //save baseurl inside this variable so that we dont need to type each http method.
         baseURI = "http://54.89.215.84";
         port = 7000;
-        basePath ="/api";
+        basePath = "/api";
 
         requestSpec = given()
-                        .accept(ContentType.JSON)
-                        .and()
-                        .auth().basic("admin", "admin")
-                        .log().all();
+                .accept(ContentType.JSON)
+                .and()
+                .auth().basic("admin", "admin")
+                .log().all();
 
-        userSpec =given()
+        userSpec = given()
                 .accept(ContentType.JSON)
                 .and()
                 .auth().basic("user", "user")
                 .log().all();
 
-       responseSpec = expect().statusCode(200)
+        responseSpec = expect().statusCode(200)
                 .and()
                 .contentType(ContentType.JSON)
-                .logDetail(LogDetail.ALL);  //logging with response specficiation
-
+                .logDetail(LogDetail.ALL);  //logging with response specification
 
 
     }
 
     @AfterAll
-    public static void close(){
-        //reset the info we set above ,method comes from restassured
+    public static void close() {
+        //reset the info we set above ,method comes from rest assured
         reset();// if you're working with different APIs
     }
 }

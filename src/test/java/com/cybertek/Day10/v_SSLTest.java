@@ -10,7 +10,7 @@ public class v_SSLTest {
     @Test
     public void test1(){
             given().
-                    relaxedHTTPSValidation(). //even if it doesnt have valid certificate I want to send request
+                    relaxedHTTPSValidation(). //even if it doesn't have valid certificate I want to send request
                      when().get("https://untrusted-root.badssl.com/")
                     .prettyPrint();
 
@@ -21,12 +21,7 @@ public class v_SSLTest {
 
         given()
                 .keyStore("pathtofile","password")
-            .when().get("apiurl");
+                .when().get("apiurl");
 
     }
-
-
-
-
-
 }

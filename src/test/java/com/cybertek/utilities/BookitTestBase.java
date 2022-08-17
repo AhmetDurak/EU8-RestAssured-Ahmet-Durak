@@ -19,7 +19,6 @@ public class BookitTestBase {
     @BeforeAll
     public static void init() {
         baseURI = ConfigurationReader.getProperty("qa3_api_url");
-
 //        teacherReqSpec = given()
 //                .accept(ContentType.JSON)
 //                .header("Authorization", getTokenByRole("teacher"))

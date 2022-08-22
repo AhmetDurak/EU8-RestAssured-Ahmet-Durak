@@ -13,7 +13,7 @@ import java.util.List;
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Regions {
-    @JsonProperty("items")
+    @JsonProperty("items") // you can change the variable name
     private List<Region> regionList;
     private int count;
 }

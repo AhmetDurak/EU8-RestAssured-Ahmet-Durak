@@ -1,7 +1,6 @@
 package com.cybertek.Day12;
 
 import com.cybertek.utilities.SpartanNewBase;
-import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
